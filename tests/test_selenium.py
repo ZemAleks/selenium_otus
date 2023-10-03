@@ -12,8 +12,8 @@ def test_search_input(driver, base_url):
 
 
 # проверка заголовка на главной странице в opencart
-def test_first(driver):
-    driver.get("http://10.66.66.7:80")
+def test_first(driver, base_url):
+    driver.get(base_url)
     assert driver.title == "Your Store"
     time.sleep(2)
 
